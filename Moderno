@@ -1,0 +1,49 @@
+package solucao;
+
+public class CelularModerno {
+    private CelularMP3MP4 celularMP3MP4;
+
+    public CelularModerno(String marca, String modelo) {
+        this.celularMP3MP4 = new CelularMP3MP4(marca, modelo);
+    }
+
+    public String getMarca() {
+        return celularMP3MP4.getMarca();
+    }
+
+    public void setMarca(String marca) {
+        celularMP3MP4.setMarca(marca);
+    }
+
+    public String getModelo() {
+        return celularMP3MP4.getModelo();
+    }
+
+    public void setModelo(String modelo) {
+        celularMP3MP4.setModelo(modelo);
+    }
+
+    public void ligar() {
+        celularMP3MP4.ligar();
+    }
+
+    public void atender() {
+        celularMP3MP4.atender();
+    }
+
+    public void tocarMusica() {
+        celularMP3MP4.tocarMusica();
+    }
+
+    public void tocarVideo() {
+        celularMP3MP4.tocarVideo();
+    }
+
+    public void acessarWeb() {
+        System.out.println(celularMP3MP4.getModelo() + " está acessando a web...");
+    }
+
+    public void tirarFoto() {
+        System.out.println(celularMP3MP4.getModelo() + " está tirando uma foto...");
+    }
+}
