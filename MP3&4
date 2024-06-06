@@ -1,0 +1,41 @@
+package solucao;
+
+public class CelularMP3MP4 {
+    private CelularSimples celularSimples;
+
+    public CelularMP3MP4(String marca, String modelo) {
+        this.celularSimples = new CelularSimples(marca, modelo);
+    }
+
+    public String getMarca() {
+        return celularSimples.getMarca();
+    }
+
+    public void setMarca(String marca) {
+        celularSimples.setMarca(marca);
+    }
+
+    public String getModelo() {
+        return celularSimples.getModelo();
+    }
+
+    public void setModelo(String modelo) {
+        celularSimples.setModelo(modelo);
+    }
+
+    public void ligar() {
+        celularSimples.ligar();
+    }
+
+    public void atender() {
+        celularSimples.atender();
+    }
+
+    public void tocarMusica() {
+        System.out.println(celularSimples.getModelo() + " está tocando música...");
+    }
+
+    public void tocarVideo() {
+        System.out.println(celularSimples.getModelo() + " está tocando vídeo...");
+    }
+}
