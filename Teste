@@ -1,0 +1,53 @@
+package solucao;
+
+public class TesteCelular {
+    public static void main(String[] args) {
+       
+        CelularSimples celularSimples = new CelularSimples("Nokia", "1100");
+        System.out.println(celularSimples.getMarca());  
+        System.out.println(celularSimples.getModelo());
+        celularSimples.ligar();
+        celularSimples.atender();
+
+     
+        celularSimples.setMarca("Motorola");
+        celularSimples.setModelo("G6");
+        System.out.println(celularSimples.getMarca());  
+        System.out.println(celularSimples.getModelo());
+
+        System.out.println("\n");
+
+       
+        CelularMP3MP4 celularMP3MP4 = new CelularMP3MP4("Sony", "Walkman");
+        System.out.println(celularMP3MP4.getMarca());  
+        System.out.println(celularMP3MP4.getModelo()); 
+        celularMP3MP4.ligar();
+        celularMP3MP4.atender();
+        celularMP3MP4.tocarMusica();
+        celularMP3MP4.tocarVideo();
+
+        
+        celularMP3MP4.setMarca("Samsung");
+        celularMP3MP4.setModelo("Galaxy Player");
+        System.out.println(celularMP3MP4.getMarca());  
+        System.out.println(celularMP3MP4.getModelo());
+
+        System.out.println("\n");
+
+        CelularModerno celularModerno = new CelularModerno("Apple", "iPhone 12");
+        System.out.println(celularModerno.getMarca());  
+        System.out.println(celularModerno.getModelo()); 
+        celularModerno.ligar();
+        celularModerno.atender();
+        celularModerno.tocarMusica();
+        celularModerno.tocarVideo();
+        celularModerno.acessarWeb();
+        celularModerno.tirarFoto();
+
+   
+        celularModerno.setMarca("Google");
+        celularModerno.setModelo("Pixel 5");
+        System.out.println(celularModerno.getMarca());  
+        System.out.println(celularModerno.getModelo()); 
+    }
+}
